@@ -9,8 +9,11 @@ let fullName = myFirstName + " " + myLastName
 
 var currentAge: Int?
 
-if fullName == "Raj Kanchan" {
+if fullName == "Ravi Kanchan" {
 currentAge = 32
 } else {
-    currentAge = 30
+    currentAge = nil
 }
+
+let generatedAge = currentAge ?? 9
+print(generatedAge)
